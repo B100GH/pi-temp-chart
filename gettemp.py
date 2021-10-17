@@ -14,6 +14,7 @@ while i < x:
 
     cpu = CPUTemperature()
     cpufinal = CPUTemperature()
+    cpufinal = cpu.temperature
 
     time.sleep(y)
     

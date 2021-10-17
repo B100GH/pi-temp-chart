@@ -9,6 +9,9 @@ y = int(input('How often it pulls temp (sec) ---- '))
 i = 1
 while i < x:
     
+    cpu = 0
+    cpufinal = 0
+
     cpu = CPUTemperature()
     cpufinal = CPUTemperature()
 
@@ -16,12 +19,20 @@ while i < x:
     
     cpu = int(cpu.temperature)
     
-    graph = cpu #or //2 or //5
+    graph = cpu #or //2 or //5 use for scale of graph
     
     graph = int(cpu)
 
-    print(graph *'-')
-    print(cpufinal)
+    cpufinal = str(cpufinal)
+
+    a = ((graph *'-')+("      "+cpufinal))
+
+    print(a)
+
+    text_file = open("temprecords.txt","a")
+    text_file.write(a+'''
+    ''')
+    text_file.close()
 
     i = i + 1
 

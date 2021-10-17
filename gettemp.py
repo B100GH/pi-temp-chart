@@ -19,3 +19,5 @@ while i < x:
 print('''
 The Tracking has completed ''')
  
+
+#add a bar chart by for in the tens and the ones place by ----- 

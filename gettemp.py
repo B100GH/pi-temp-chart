@@ -1,10 +1,15 @@
 from gpiozero import CPUTemperature
 import time
 
+
+x = int.input('Number of Repeats -- ')
+y = int.input('How often it pulls temp (sec) -- ')
+
+
 i = 1
-while i <=60:
+while i <=x:
     
-    time.sleep(60) # Sleep for 60 seconds
+    time.sleep(y) # Sleep for 60 seconds
     
     
     cpu = CPUTemperature()
@@ -14,3 +19,5 @@ while i <=60:
 print('''
 done
 ''')
+
+print(x + )

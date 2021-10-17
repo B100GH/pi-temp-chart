@@ -17,7 +17,6 @@ while i < x:
     cpu = int(cpu.temperature)
     
     graph = cpu #or //2 or //5
-    graph = round(graph, 1)
     
     graph = int(cpu)
 

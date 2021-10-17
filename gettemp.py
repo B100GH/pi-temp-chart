@@ -11,12 +11,9 @@ while i < x:
     
     time.sleep(y) # Sleep for 60 seconds
     
-    
-
-    cpu = CPUTemperature()
-    print(cpu.temperature)
-    graph = cpu/5
-    graph = round(graph, 1)
+    cpu = int(cpu.temperature)
+    graph = cpu//5
+    graph = int(cpu)
 
     print(graph * '-' 'Temp -' + cpu )
 

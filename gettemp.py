@@ -1,3 +1,5 @@
+from gpiozero import CPUTemperature
+
 i = 1
 while i <=100:
     cpu = CPUTemperature()
@@ -7,5 +9,3 @@ while i <=100:
 print('''
 done
 ''')
-
-s

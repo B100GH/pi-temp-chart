@@ -1,6 +1,11 @@
- pip install gpiozero
+i = 1
+while i <=100:
+    cpu = CPUTemperature()
+    print(print(cpu.temperature))
+    i = i + 1
 
-from gpiozero import CPUTemperature
+print('''
+done
+''')
 
-cpu = CPUTemperature()
-print(cpu.temperature)
+s

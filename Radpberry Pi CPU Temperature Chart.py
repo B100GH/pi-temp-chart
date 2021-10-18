@@ -26,7 +26,7 @@ while i < x:
 
     cpufinal = str(cpufinal)
 
-    a = ((graph *'-')+("      "+cpufinal))
+    a = ((graph *'+')+("      "+cpufinal))
 
     print(a)
 

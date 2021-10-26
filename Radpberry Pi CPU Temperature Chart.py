@@ -26,11 +26,11 @@ while i < x:
 
     cpufinal = str(cpufinal)
 
-    a = ((graph *'-')+("      "+cpufinal))
+    a = ((graph *'+')+("      "+cpufinal))
 
     print(a)
 
-    text_file = open("temprecords.txt","a")
+    text_file = open("/home/pi/desktop/temprecords.txt","a")
     text_file.write(a+'''
     ''')
     text_file.close()
